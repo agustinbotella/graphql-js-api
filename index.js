@@ -14,6 +14,6 @@ mongoose
   .connect(process.env.MONGO_DB, { useNewUrlParser: true })
   .then(() => {
     console.log('Connected to MongoDB');
-    return server.listen({ port: 4001 });
+    return server.listen({ port: 8080 });
   })
   .then((res) => console.log(`Apollo Server running at ${res.url}`));
